@@ -8,6 +8,7 @@ import proj3 from "./img/proj3.png";
 import proj4 from "./img/proj4.png";
 import "./index.css";
 import { AboutMe } from "./components/AboutMe";
+import Footer from "./components/Footer";
 
 const projects = [
   {
@@ -64,6 +65,7 @@ function App() {
         </div>
         <TechSkills />
         <AboutMe />
+        <Footer />
       </div>
     </>
   );

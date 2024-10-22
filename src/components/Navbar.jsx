@@ -21,8 +21,13 @@ export const Navbar = () => {
 
   return (
     // need to make it all-screen friendly
-    <div className="flex w-full justify-between gap-4 items-center px-10 py-5 text-white">
-      <h1 className="text-3xl italic">MyPortfolio</h1>
+    <div
+      id="home"
+      className="flex w-full justify-between gap-4 items-center px-10 py-5 text-white"
+    >
+      <h1 className="text-3xl italic">
+        <a href="#home">MyPortfolio</a>
+      </h1>
       {showNav && (
         <>
           <div className="flex gap-12 icons">

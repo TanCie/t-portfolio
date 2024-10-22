@@ -33,4 +33,9 @@ a:hover {
   .myimg {
     display: none;
   }
+  #about {
+    padding: 10px;
+    flex-direction: column;
+    font-size: 14px;
+  }
 }

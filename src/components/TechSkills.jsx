@@ -1,12 +1,13 @@
 import pythonImg from "../img/png/001-python.png";
 import databaseImg from "../img/png/002-database.png";
 import gitImg from "../img/png/003-git.png";
-import css3Img from "../img/png/004-css-3.png";
-import html5Img from "../img/png/005-html-5.png";
+import css3Img from "../img/png/004-css.png";
+import html5Img from "../img/png/005-html.png";
 import jsImg from "../img/png/006-js.png";
-import visualStudioImg from "../img/png/007-visual-studio.png";
+import visualStudioImg from "../img/png/007-vs.png";
 import sqlImg from "../img/png/008-sql.png";
 import nodejsImg from "../img/png/009-nodejs.png";
+import reactImg from "../img/png/010-react.png";
 
 const skills = [
   {
@@ -54,12 +55,20 @@ const skills = [
     skill: "Node.js",
     image: nodejsImg,
   },
+  {
+    id: 10,
+    skill: "React",
+    image: reactImg,
+  },
 ];
 
 export const TechSkills = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center mt-20">
-      <h3 className="text-white my-10 text-center text-3xl">
+    <div
+      id="tech"
+      className="w-full flex flex-col items-center justify-center mt-20"
+    >
+      <h3 className="text-gray-200 my-10 text-center text-3xl md:text-4xl font-semibold font-mono">
         Languages / Frameworks
       </h3>
       <div className="w-[70%] flex flex-wrap justify-center">
