@@ -9,6 +9,8 @@ import proj4 from "./img/proj4.png";
 import "./index.css";
 import { AboutMe } from "./components/AboutMe";
 import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Contact from "./components/Contact";
 
 const projects = [
   {
@@ -48,26 +50,36 @@ const projects = [
 
 function App() {
   return (
-    <>
-      <div className="w-full bg-gray-950">
+    <Router>
+      <div className="min-h-screen w-full bg-gray-950">
         <Navbar />
-        <Hero />
-        <h2
-          id="project"
-          className="text-white font-bold text-4xl text-center py-16"
-        >
-          PROJECTS
-        </h2>
-        <div className="flex flex-wrap justify-center gap-10">
-          {projects.map((proj) => (
-            <ProjectCard key={proj.id} project={proj} />
-          ))}
-        </div>
-        <TechSkills />
-        <AboutMe />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <h2
+                  id="project"
+                  className="text-white font-bold text-4xl text-center py-16"
+                >
+                  PROJECTS
+                </h2>
+                <div className="flex flex-wrap justify-center gap-10">
+                  {projects.map((proj) => (
+                    <ProjectCard key={proj.id} project={proj} />
+                  ))}
+                </div>
+                <TechSkills />
+                <AboutMe />
+              </>
+            }
+          />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
         <Footer />
       </div>
-    </>
+    </Router>
   );
 }
 

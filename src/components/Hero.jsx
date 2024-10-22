@@ -9,9 +9,9 @@ export const Hero = () => {
         {/* make h1 gradient color */}
         <h1 className="text-2xl md:text-4xl pb-8 grad">Hello, I'm Tanushree</h1>
         <p className="text-sm md:text-base pb-8">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          veniam maxime perspiciatis consequuntur minima deleniti itaque quasi
-          nesciunt dignissimos iste.
+          A passionate web developer with a keen interest in building responsive
+          and interactive websites. A quick learner and I love to explore new
+          technologies.
         </p>
         <Button
           text={

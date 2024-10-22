@@ -17,7 +17,7 @@ const skills = [
   },
   {
     id: 2,
-    skill: "Database",
+    skill: "MySQL",
     image: databaseImg,
   },
   {
