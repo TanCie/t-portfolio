@@ -4,6 +4,7 @@ import { HashLink } from "react-router-hash-link";
 
 export const Navbar = () => {
   const [showNav, setShowNav] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -11,6 +12,7 @@ export const Navbar = () => {
         setShowNav(false);
       } else {
         setShowNav(true);
+        setIsOpen(false);
       }
     };
 
@@ -20,6 +22,10 @@ export const Navbar = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     // need to make it all-screen friendly
@@ -46,19 +52,26 @@ export const Navbar = () => {
       )}
       {!showNav && (
         <div className="icons">
-          <i className="fa-solid fa-bars fa-2x"></i>
-          <div className="flex flex-col text-center">
-            <HashLink smooth to="/#project">
-              Projects
-            </HashLink>
-            <HashLink smooth to="/#tech">
-              Technologies
-            </HashLink>
-            <HashLink smooth to="/#about">
-              About Me
-            </HashLink>
-            <Link to="./Contact"> Contact Me </Link>
-          </div>
+          <button onClick={toggleNav} className="toggle">
+            <i
+              className={` fa-solid ${isOpen ? "fa-times" : "fa-bars"} fa-2x `}
+            ></i>
+          </button>
+        </div>
+      )}
+
+      {isOpen && (
+        <div className="flex flex-col w-full items-end right-16 gap-4 absolute top-32 rounded-md">
+          <HashLink smooth to="/#project">
+            Projects
+          </HashLink>
+          <HashLink smooth to="/#tech">
+            Technologies
+          </HashLink>
+          <HashLink smooth to="/#about">
+            About Me
+          </HashLink>
+          <Link to="./Contact"> Contact Me </Link>
         </div>
       )}
     </div>
