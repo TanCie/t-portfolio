@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export const Hero = () => {
   return (
-    <div className="min-h-[80vh] w-full flex items-center p-24 justify-around bg-img text-white">
+    <div className="min-h-[80vh] w-full flex items-center p-12 md:p-24 justify-around bg-img text-white">
       <div className="w-full md:w-[40%] mt-16">
         {/* make h1 gradient color */}
         <h1 className="text-2xl md:text-4xl pb-8 grad">Hello, I'm Tanushree</h1>

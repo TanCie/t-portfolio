@@ -66,25 +66,27 @@ const Contact = () => {
       )}
 
       {!showContact && (
-        <div className="flex flex-col gap-4">
-          <a href="">
-            <i className="fa-brands fa-linkedin px-4"></i>
-            Tanushree Chakravorty
-          </a>
-          <a href="">
-            <i className="fa-brands fa-github px-4"></i>
-            TanCie
-          </a>
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col gap-4 items-start">
+            <a href="">
+              <i className="fa-brands fa-linkedin px-4"></i>
+              Tanushree Chakravorty
+            </a>
+            <a href="">
+              <i className="fa-brands fa-github px-4"></i>
+              TanCie
+            </a>
 
-          <a href="">
-            <i className="fa-brands fa-whatsapp px-4"></i>
-            +91 8240727261
-          </a>
+            <a href="">
+              <i className="fa-brands fa-whatsapp px-4"></i>
+              +91 8240727261
+            </a>
 
-          <a href="">
-            <i className="fa-solid fa-envelope px-4"></i>
-            tanushree998@gmail.com
-          </a>
+            <a href="">
+              <i className="fa-solid fa-envelope px-4"></i>
+              tanushree998@gmail.com
+            </a>
+          </div>
         </div>
       )}
     </div>

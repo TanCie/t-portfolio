@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export const Navbar = () => {
   const [showNav, setShowNav] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    closeNav();
+    navigate("/Contact");
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -27,26 +34,30 @@ export const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeNav = () => {
+    setIsOpen(false);
+  };
+
   return (
     // need to make it all-screen friendly
     <div className="flex w-full justify-between gap-4 items-center px-10 md:px-20 py-8 text-white">
       <h1 className="text-3xl italic">
-        <a href="/">MyPortfolio</a>
+        <a href="/">@tancie</a>
       </h1>
       {showNav && (
         <>
           <div className="flex gap-12 icons">
-            <HashLink smooth to="/#project">
+            <HashLink onClick={closeNav} smooth to="/#project">
               Projects
             </HashLink>
-            <HashLink smooth to="/#tech">
+            <HashLink onClick={closeNav} smooth to="/#tech">
               Technologies
             </HashLink>
-            <HashLink smooth to="/#about">
+            <HashLink onClick={closeNav} smooth to="/#about">
               About Me
             </HashLink>
 
-            <Link to="./Contact"> Contact Me </Link>
+            <Link onClick={handleContactClick}> Contact Me </Link>
           </div>
         </>
       )}
@@ -62,16 +73,19 @@ export const Navbar = () => {
 
       {isOpen && (
         <div className="flex flex-col w-full items-end right-16 gap-4 absolute top-32 rounded-md">
-          <HashLink smooth to="/#project">
+          <HashLink onClick={closeNav} smooth to="/#project">
             Projects
           </HashLink>
-          <HashLink smooth to="/#tech">
+          <HashLink onClick={closeNav} smooth to="/#tech">
             Technologies
           </HashLink>
-          <HashLink smooth to="/#about">
+          <HashLink onClick={closeNav} smooth to="/#about">
             About Me
           </HashLink>
-          <Link to="./Contact"> Contact Me </Link>
+          <Link onClick={closeNav} to="./Contact">
+            {" "}
+            Contact Me{" "}
+          </Link>
         </div>
       )}
     </div>
