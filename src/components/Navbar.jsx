@@ -57,7 +57,10 @@ export const Navbar = () => {
               About Me
             </HashLink>
 
-            <Link onClick={handleContactClick}> Contact Me </Link>
+            <Link onClick={handleContactClick} to="./Contact">
+              {" "}
+              Contact Me{" "}
+            </Link>
           </div>
         </>
       )}
