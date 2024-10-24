@@ -29,12 +29,12 @@ export const AboutMe = () => {
           <h5 className="font-bold text-base md:text-xl">
             Higher Secondary (XII) CBSE
           </h5>
-          <p className="italic">Jul 2014 - Jun 2016</p>
+          <p className="italic">Apr 2014 - Jun 2016</p>
           <p>DAV Model School, Durgapur</p>
           <br />
 
           <h5 className="font-bold text-base md:text-xl">Secondary (X) ICSE</h5>
-          <p className="italic">Jul 2014 - Jun 2016</p>
+          <p className="italic">Jun 2002 - Mar 2014</p>
           <p>Steel Carmel School, Durgapur</p>
         </div>
       </div>

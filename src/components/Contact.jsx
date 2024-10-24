@@ -57,10 +57,12 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex flex-col items-start text-lg justify-center gap-6">
-            <a href="">Tanushree Chakravorty</a>
-            <a href="">TanCie</a>
-            <a href="">+91 8240727261</a>
-            <a href="">tanushree998@gmail.com</a>
+            <a href="https://www.linkedin.com/in/tanushree-c/">
+              Tanushree Chakravorty
+            </a>
+            <a href="https://github.com/TanCie">TanCie</a>
+            <a href="https://wa.me/8240727261">+91 8240727261</a>
+            <a href="mailto:tanushree998@gmail.com">tanushree998@gmail.com</a>
           </div>
         </div>
       )}
@@ -68,21 +70,21 @@ const Contact = () => {
       {!showContact && (
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col gap-4 items-start">
-            <a href="">
+            <a href="https://www.linkedin.com/in/tanushree-c/">
               <i className="fa-brands fa-linkedin px-4"></i>
               Tanushree Chakravorty
             </a>
-            <a href="">
+            <a href="https://github.com/TanCie">
               <i className="fa-brands fa-github px-4"></i>
               TanCie
             </a>
 
-            <a href="">
+            <a href="https://wa.me/8240727261">
               <i className="fa-brands fa-whatsapp px-4"></i>
               +91 8240727261
             </a>
 
-            <a href="">
+            <a href="mailto:tanushree998@gmail.com">
               <i className="fa-solid fa-envelope px-4"></i>
               tanushree998@gmail.com
             </a>
