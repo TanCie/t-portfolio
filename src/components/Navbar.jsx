@@ -1,17 +1,10 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export const Navbar = () => {
   const [showNav, setShowNav] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
-
-  const navigate = useNavigate();
-
-  const handleContactClick = () => {
-    closeNav();
-    navigate("/Contact");
-  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -57,7 +50,7 @@ export const Navbar = () => {
               About Me
             </HashLink>
 
-            <Link onClick={handleContactClick} to="./Contact">
+            <Link onClick={closeNav} to="./Contact">
               {" "}
               Contact Me{" "}
             </Link>
