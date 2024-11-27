@@ -68,21 +68,21 @@ export const TechSkills = () => {
       id="tech"
       className="w-full flex flex-col items-center justify-center mt-20"
     >
-      <h3 className="text-gray-200 my-10 text-center text-3xl md:text-4xl font-semibold font-mono">
+      <h3 className="text-gray-200 my-10 text-center text-2xl md:text-4xl font-semibold font-mono">
         Languages / Frameworks
       </h3>
       <div className="w-[70%] flex flex-wrap justify-center">
         {skills.map((skill) => (
           <div
             key={skill.id}
-            className="inline-flex items-center border rounded-xl border-gray-400 px-5 py-2 m-4 gap-3 text-white"
+            className="inline-flex items-center border rounded-xl border-gray-400 px-3 md:px-5 py-2 m-4 gap-3 text-white"
           >
             <img
               src={skill.image}
               alt={skill.skill}
-              className="w-10 h-10 object-contain"
+              className="w-5 md:w-10 h-5 md:h-10 object-contain"
             />
-            <p className="text-md md:text-lg">{skill.skill}</p>
+            <p className="text-xs md:text-lg">{skill.skill}</p>
           </div>
         ))}
       </div>

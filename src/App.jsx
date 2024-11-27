@@ -5,7 +5,7 @@ import ProjectCard from "./components/ProjectCard";
 import proj1 from "./img/proj1.png";
 import proj2 from "./img/proj2.jpg";
 import proj3 from "./img/proj3.png";
-import proj4 from "./img/proj4.png";
+import proj5 from "./img/proj5.png";
 import "./index.css";
 import { AboutMe } from "./components/AboutMe";
 import Footer from "./components/Footer";
@@ -23,11 +23,11 @@ const projects = [
   },
   {
     id: 2,
-    title: "Urban Designs",
-    desc: "Landing Page Design for Urban Designs",
-    link: "https://tancie.github.io/design1/",
-    gitLink: "https://github.com/TanCie/design1",
-    image: proj4,
+    title: "ChatApp",
+    desc: "A responsive real-time chat app using MERN stack ",
+    link: "https://tancie-chatapp.onrender.com/",
+    gitLink: "https://github.com/TanCie/mern-chatapp",
+    image: proj5,
   },
   {
     id: 3,
@@ -61,7 +61,7 @@ function App() {
                 <Hero />
                 <h2
                   id="project"
-                  className="text-white font-bold text-4xl text-center py-16"
+                  className="text-white font-bold text-3xl md:text-4xl text-center py-16"
                 >
                   PROJECTS
                 </h2>
