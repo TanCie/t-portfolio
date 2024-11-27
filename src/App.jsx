@@ -24,7 +24,7 @@ const projects = [
   {
     id: 2,
     title: "ChatApp",
-    desc: "A responsive real-time chat app using MERN stack ",
+    desc: "A chat app using MERN stack",
     link: "https://tancie-chatapp.onrender.com/",
     gitLink: "https://github.com/TanCie/mern-chatapp",
     image: proj5,
