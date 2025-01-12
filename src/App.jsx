@@ -4,8 +4,8 @@ import { TechSkills } from "./components/TechSkills";
 import ProjectCard from "./components/ProjectCard";
 import proj1 from "./img/proj1.png";
 import proj2 from "./img/proj2.jpg";
-import proj3 from "./img/proj3.png";
-import proj5 from "./img/proj5.png";
+import cookmom from "./img/cookmom-p.png";
+import chat from "./img/chat-proj.png";
 import "./index.css";
 import { AboutMe } from "./components/AboutMe";
 import Footer from "./components/Footer";
@@ -27,15 +27,15 @@ const projects = [
     desc: "A chat app using MERN stack",
     link: "https://chatty-3tjb.onrender.com/",
     gitLink: "https://github.com/TanCie/s-chatapp",
-    image: proj5,
+    image: chat,
   },
   {
     id: 3,
-    title: "BingeMe",
+    title: "CookMom",
     desc: "Monetize your creavtivity and passion",
-    link: "https://tancie.github.io/landing_page/",
-    gitLink: "https://github.com/TanCie/landing_page",
-    image: proj3,
+    link: "https://recipe-finder-navy-nine.vercel.app/",
+    gitLink: "https://github.com/TanCie/recipe-finder",
+    image: cookmom,
   },
 
   {
